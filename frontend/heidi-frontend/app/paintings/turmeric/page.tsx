@@ -1,8 +1,8 @@
-import Header from "../../../components/header";
 import MyNavbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
 
 export default function Turmeric() {
+
   return (
     <>  
       <MyNavbar bgcolor="bg-transparent"/>
@@ -53,9 +53,8 @@ export default function Turmeric() {
            something or someone you are grateful for
            </p>
       </div>
-      <Header>
-          Turmeric Paintings
-        </Header>
+
+
       <Footer/>
     </>
   )

@@ -29,9 +29,14 @@ export const artwork = defineType({
       {
         name: 'artImage',
         title: 'Artwork Image',
-        type: 'accessibleImage',
-        description: 'Add an image of the artwork',
-      },
+        type: 'array',
+        of: [
+          {
+            type: 'accessibleImage'
+          }
+       ],
+        description: 'Add an image of the artwork'
+      }
     ]
   })
 
