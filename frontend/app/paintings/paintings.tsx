@@ -9,7 +9,6 @@ export default function MyPaintings({CollectionName}){
         variables: {
             CollectionName: CollectionName
         }});
-        console.log(data)
     if (loading) return (
         <>
       <div className="relative animate-pulse grid grid-cols-1 mx-auto p-10 gap-10 z-0 max-w-3xl">

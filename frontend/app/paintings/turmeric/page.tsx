@@ -2,6 +2,14 @@ import MyNavbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
 import MyPaintings from "../paintings";
 
+
+export const dynamic = 'force-dynamic',
+  dynamicParams = true,
+  revalidate = false,
+  fetchCache = 'auto',
+  runtime = 'nodejs',
+  preferredRegion = 'auto'
+  
 export default function Turmeric() {
 
   return (
