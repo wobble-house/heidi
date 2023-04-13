@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
     "@apollo/client": "^3.7.12",
@@ -16,13 +17,17 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "framer-motion": "^10.11.6",
     "graphql": "^16.6.0",
     "next": "13.2.4",
     "next-sanity": "^4.1.6",
     "next-sanity-client": "^1.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7",
     "react-merge-refs": "*",
+    "remark-breaks": "^3.0.2",
+    "remark-gfm": "^3.0.1",
     "server-only": "*",
     "sharp": "*",
     "stripe": "*",
@@ -31,6 +36,10 @@
     "vercel": "*"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "3.3.0",
+    "@graphql-codegen/client-preset": "3.0.0",
+    "@graphql-codegen/introspection": "3.0.1",
+    "@graphql-codegen/typescript": "^3.0.3",
     "@types/classnames": "*",
     "@types/node": "*",
     "@types/react": "*",

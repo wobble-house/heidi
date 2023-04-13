@@ -1,6 +1,7 @@
 import './globals.css'
 import { Lora, Aboreto } from 'next/font/google'
 import { Providers } from '../components/providers';
+import { Animation } from '@/components/animation';
 
 export const metadata = {
   title: 'Create Next App',
@@ -27,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lora.variable} ${aboreto.variable}`}>
       <body>
+      <Animation mode={'wait'} initial={false}>
         <Providers>
           {children}
         </Providers>
+        </Animation>
       </body>
     </html>
   )
