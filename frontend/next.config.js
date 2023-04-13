@@ -10,6 +10,22 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: [
+    'cdn.sanity.io',
+    ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
+        port: '80',
+        pathname: '/***',
+      }
+    ],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; sandbox;",
+    minimumCacheTTL: 60,
+},
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if

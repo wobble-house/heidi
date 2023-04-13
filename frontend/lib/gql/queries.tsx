@@ -2,41 +2,35 @@
 
 import {gql} from '@apollo/client'
 
-export const GET_ARTWORK = gql`
-query getArtworkQuery() {
-    allArtwork() {
-      _Id
-      name 
-      description
-      dimensions
-      price
-      artImage {
-        Image 
-        alt 
-        caption
-      }
-    }
-  }
-  `; 
-
 export const GET_COLLECTION = gql`
-query getCollectionsQuery() {
-    allCollection() {
-      _Id
+query getCollection($CollectionName: String!) {
+  allCollection(where: {collectionName: {eq: $CollectionName}}  ) {
+      _id
       collectionName
-      InventoryDate
+      inventoryDate
       collectionArtwork {
-        _Id
+        _id
         name 
         description
         dimensions
         price
         artImage {
-            Image
+            _key
+            image {
+              asset {
+                url
+                metadata {
+                  dimensions {
+                    height
+                    width
+                  }
+                }
+              }
+            }
             alt
             caption
         }
       }
     }
-  }
+}
   `; 

@@ -1,6 +1,7 @@
 import Header from "../../../components/header"
 import MyNavbar from "../../../components/navbar"
 import Footer from "../../../components/footer"
+import MyPaintings from "../paintings"
 
 export default function Abstract() {
   return (
@@ -11,6 +12,7 @@ export default function Abstract() {
           Abstract Paintings
         </Header>
       </div>
+      <MyPaintings CollectionName={"Abstract Paintings"}/>
       <Footer/>
     </>
   )

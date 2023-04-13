@@ -1,5 +1,6 @@
 import MyNavbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
+import MyPaintings from "../paintings";
 
 export default function Turmeric() {
 
@@ -54,7 +55,7 @@ export default function Turmeric() {
            </p>
       </div>
 
-
+<MyPaintings CollectionName={"Turmeric Paintings"}/>
       <Footer/>
     </>
   )
