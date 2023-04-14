@@ -3,6 +3,7 @@ import { defineType } from 'sanity'
 export const accessibleImage = defineType ({
     name: 'accessibleImage',
     type: 'object',
+    title: 'Acessible Image',
     fields: [
         {
         name: 'image',
@@ -17,17 +18,11 @@ export const accessibleImage = defineType ({
         validation: Rule => [
           Rule.required(),
         ],
-        options: {
-          isHighlighted: true,
-        }
       },
       {
         name: 'caption',
         type: 'string',
         title: 'Caption',
-        options: {
-          isHighlighted: true
-        }
       }
     ]
   }) 

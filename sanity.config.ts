@@ -9,9 +9,10 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'wheat-dunlin',
+  title: 'heidivf',
   projectId: '1533j992',
   dataset: 'production',
+  basePath: '/studio',
 
   plugins: [deskTool(), media(), visionTool(), ...(isDev ? devOnlyPlugins : [])],
 

@@ -9,13 +9,24 @@ export const collection = defineType({
     defineField({
       name: "collectionName",
       type: "string",
-      title: "First Name",
+      title: "Collection Name",
+    }),
+    defineField({
+      name: "collectionDescription",
+      type: "text",
+      title: "Collection Description",
     }),
     defineField({
       name: "inventoryDate",
       type: "datetime",
       title: "Date added to inventory",
     }),
+    {
+      name: 'coverImage',
+      title: 'Cover Image',
+      type: 'accessibleImage',
+      description: 'Add an image to use as the header of your site'
+    },
     defineField({
       title: 'Collection Artwork',
       name: 'collectionArtwork',
