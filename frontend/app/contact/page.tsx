@@ -1,11 +1,10 @@
-import MyNavbar from "../../components/navbar"
 import Header from "../../components/header"
-import Footer from "../../components/footer"
+import MyNavbar from "@/components/navbar"
 
 export default function Contact() {
   return (
     < >  
-      <MyNavbar bgcolor="bg-heidibg"/>
+        <MyNavbar inverttext={false} />
       <div className="py-64 mx-auto">
       <Header>
       I&apos;D LOVE TO HEAR FROM YOU!
@@ -19,7 +18,6 @@ export default function Contact() {
           <button className="bg-stone-900 text-white font-serif font-bold mx-auto p-3 rounded-sm m-3">Submit</button>
         </form>
       </div>
-      <Footer/>
     </>
   )
 }

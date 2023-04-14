@@ -1,7 +1,4 @@
-import Header from "../../../components/header"
-import MyNavbar from "../../../components/navbar"
-import Footer from "../../../components/footer"
-import MyPaintings from "../paintings"
+import MyCollection from "../../../components/collection"
 
 export const dynamic = 'force-dynamic',
   dynamicParams = true,
@@ -13,15 +10,6 @@ export const dynamic = 'force-dynamic',
   
 export default function Abstract() {
   return (
-    < >  
-      <MyNavbar bgcolor="bg-heidibg"/>
-      <div className="py-64 mx-auto">
-        <Header>
-          Abstract Paintings
-        </Header>
-      </div>
-      <MyPaintings CollectionName={"Abstract Paintings"}/>
-      <Footer/>
-    </>
+      <MyCollection CollectionName={"Abstract Paintings"}/>
   )
 }

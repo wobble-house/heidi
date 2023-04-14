@@ -860,12 +860,36 @@
             "deprecationReason": null
           },
           {
+            "name": "collectionDescription",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "collectionName",
             "description": null,
             "args": [],
             "type": {
               "kind": "SCALAR",
               "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "coverImage",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "AccessibleImage",
               "ofType": null
             },
             "isDeprecated": false,
@@ -986,11 +1010,35 @@
             "deprecationReason": null
           },
           {
+            "name": "collectionDescription",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "collectionName",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "StringFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "coverImage",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "AccessibleImageFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -1093,11 +1141,35 @@
             "deprecationReason": null
           },
           {
+            "name": "collectionDescription",
+            "description": null,
+            "type": {
+              "kind": "ENUM",
+              "name": "SortOrder",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "collectionName",
             "description": null,
             "type": {
               "kind": "ENUM",
               "name": "SortOrder",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "coverImage",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "AccessibleImageSorting",
               "ofType": null
             },
             "defaultValue": null,

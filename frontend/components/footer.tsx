@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer(){
     return(
         <>
-        <footer className="md:fixed bottom-0 w-full bg-heidibg pb-20">
+        <footer className="bottom-0 w-full bg-heidibg pb-20">
             <div className="flex flex-col mx-auto text-center text-sm relative font-serif text-zinc-500">
                 <Link href="/shop" className="underline">Shop</Link>
                 <Link href="/about" className="underline">About</Link>

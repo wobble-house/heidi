@@ -7,6 +7,23 @@ query getCollection($CollectionName: String!) {
   allCollection(where: {collectionName: {eq: $CollectionName}}  ) {
       _id
       collectionName
+      collectionDescription
+    	coverImage {
+        _key
+        image {
+          asset {
+            url
+            metadata {
+              dimensions {
+                height
+                width
+              }
+            }
+          }
+        }
+        alt
+        caption
+      }
       inventoryDate
       collectionArtwork {
         _id

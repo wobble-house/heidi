@@ -118,7 +118,9 @@ export type Collection = Document & {
   /** Date the document was last modified */
   _updatedAt: Maybe<Scalars['DateTime']>;
   collectionArtwork: Maybe<Array<Maybe<Artwork>>>;
+  collectionDescription: Maybe<Scalars['String']>;
   collectionName: Maybe<Scalars['String']>;
+  coverImage: Maybe<AccessibleImage>;
   inventoryDate: Maybe<Scalars['DateTime']>;
 };
 
@@ -131,7 +133,9 @@ export type CollectionFilter = {
   _rev: InputMaybe<StringFilter>;
   _type: InputMaybe<StringFilter>;
   _updatedAt: InputMaybe<DatetimeFilter>;
+  collectionDescription: InputMaybe<StringFilter>;
   collectionName: InputMaybe<StringFilter>;
+  coverImage: InputMaybe<AccessibleImageFilter>;
   inventoryDate: InputMaybe<DatetimeFilter>;
 };
 
@@ -142,7 +146,9 @@ export type CollectionSorting = {
   _rev: InputMaybe<SortOrder>;
   _type: InputMaybe<SortOrder>;
   _updatedAt: InputMaybe<SortOrder>;
+  collectionDescription: InputMaybe<SortOrder>;
   collectionName: InputMaybe<SortOrder>;
+  coverImage: InputMaybe<AccessibleImageSorting>;
   inventoryDate: InputMaybe<SortOrder>;
 };
 

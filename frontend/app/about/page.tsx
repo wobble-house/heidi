@@ -1,11 +1,10 @@
-import MyNavbar from "../../components/navbar"
-import Footer from "../../components/footer"
 import Image from "next/image"
+import MyNavbar from "@/components/navbar"
 
 export default function About() {
   return (
     <>  
-      <MyNavbar bgcolor="bg-heidibg"/>
+        <MyNavbar inverttext={false} />
         <div className="py-64 flex flex-col md:flex-row gap-20 max-w-7xl px-5 mx-auto justify-center">
           <div className="relative max-w-sm">
           <Image src="/images/Heidi+Vasterling-Ford.jpg" 
@@ -31,7 +30,6 @@ export default function About() {
         <div>
             <h2 className="mx-auto text-center text-5xl font-sans max-w-4xl">“ONE&apos;S ART GOES AS FAR AND AS DEEP AS ONE&apos;S LOVE GOES.” ANDREW WYETH</h2>
           </div>
-      <Footer/>
     </>
   )
 }
