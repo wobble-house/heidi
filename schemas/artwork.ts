@@ -1,5 +1,4 @@
 import { defineField, defineType } from "sanity";
-import accessibleImage from "./objects/accessibleImage";
 
 export const artwork = defineType({
     name: 'artwork',
